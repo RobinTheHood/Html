@@ -1,0 +1,23 @@
+{
+    "name": "robinthehood/html",
+    "type": "library",
+    "description": "Helper class for html tags.",
+    "keywords": ["html"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robin Wieschendorf",
+            "email": "mail@robinwieschendorf.de",
+            "homepage": "http://robinwieschendorf.de",
+            "role": "Project Founder"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0"
+    },
+    "autoload": {
+        "psr-4" : {
+            "RobinTheHood\\Html\\" : "src"
+        }
+    }
+}
