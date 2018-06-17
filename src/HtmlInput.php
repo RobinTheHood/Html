@@ -20,7 +20,7 @@ class HtmlInput extends HtmlTag
 
     public function render()
     {
-        if ($this->tagName === 'textArea') {
+        if ($this->tagName === 'textarea') {
             return $this->renderTextArea();
         } elseif ($this->tagName === 'input') {
             return $this->renderInput();
@@ -37,7 +37,10 @@ class HtmlInput extends HtmlTag
 
     public function renderTextArea()
     {
-        return '<textarea ' . $this->renderAttributes() . '></textarea>';
+        $value = $this->attributes['value'];
+        unset($this->attributes['value']);
+
+        return '<textarea ' . $this->renderAttributes() . '>' . $value . '</textarea>';
     }
 
     public function renderSelect()
