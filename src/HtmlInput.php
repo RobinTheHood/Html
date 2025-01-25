@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\Html;
 
 use RobinTheHood\Html\HtmlTag;
@@ -49,7 +50,7 @@ class HtmlInput extends HtmlTag
         unset($this->attributes['value']);
 
         $options = '';
-        foreach($this->values as $value => $name) {
+        foreach ($this->values as $value => $name) {
             $selected = '';
             if ($selectedValue == $value) {
                 $selected = 'selected';

@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\Html;
 
 class HtmlTag
@@ -9,12 +10,11 @@ class HtmlTag
 
     public function setAttribute($name, $value)
     {
-
     }
 
     public function setAttributes($attributes)
     {
-        foreach($attributes as $name => $value) {
+        foreach ($attributes as $name => $value) {
             $this->extendAttribute($name, $value);
         }
     }
@@ -36,7 +36,7 @@ class HtmlTag
     public function renderAttributes()
     {
         $html = '';
-        foreach($this->attributes as $name => $value) {
+        foreach ($this->attributes as $name => $value) {
             $html .= $name . '="' . $value . '" ';
         }
         return $html;

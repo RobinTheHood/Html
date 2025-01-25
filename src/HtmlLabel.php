@@ -1,4 +1,5 @@
 <?php
+
 namespace RobinTheHood\Html;
 
 use RobinTheHood\Html\HtmlTag;
